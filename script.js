@@ -6,7 +6,7 @@ window.addEventListener('keydown', e => {
 
     var fileName = prompt('Enter file name: ') + '.html'
     var a = document.createElement('a')
-    a.href = "data:application/octet-stream, " + encodeURIComponent("<html>" + code + "<\/html?\>")
+    a.href = "data:application/octet-stream, " + encodeURIComponent("<html>\n" + code + "<\/html\>")
     a.download = fileName
     a.click()
 
