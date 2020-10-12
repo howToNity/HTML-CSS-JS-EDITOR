@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,target-densitydpi=device-dpi"
+      name="viewport"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>HTML, CSS, JS, EDITOR</title>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="leftsection">
+        <div class="uppersection">
+          <div class="header">HTML EDITOR</div>
+          <div
+            class="editor"
+            id="htmleditor"
+            contenteditable="true"
+            onkeyup="compile()"
+          ></div>
+        </div>
+        <div class="lowersection">
+          <div class="lowerleftsection">
+            <div class="header">CSS EDITOR</div>
+            <div class="editor" id="csseditor" contenteditable="true" onkeyup="compile()"></div>
+          </div>
+          <div class="lowerrightsection">
+            <div class="header">JS EDITOR</div>
+            <div class="editor" id="jseditor" contenteditable="true" onkeyup="compile()"></div>
+          </div>
+        </div>
+      </div>
+      <div class="rightsection">
+        <iframe id="preview"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
